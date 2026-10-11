@@ -15,6 +15,13 @@
 .title-math{font-family:Georgia,serif;font-style:italic;color:var(--lime);white-space:nowrap}
 
 .reviewed-tag{display:block;width:fit-content;margin-top:5px;padding:3px 6px;border:1px solid #536d43;border-radius:4px;color:var(--lime);font-size:.6rem;line-height:1.2;font-family:var(--mono)}.metric-value:disabled{cursor:default}.detail-section code{overflow-wrap:anywhere}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.help-guide h1{font-size:1.65rem;font-weight:500;letter-spacing:-.03em;margin:0 0 12px;padding-right:36px;color:#e7f0e4;line-height:1.25}
+.help-guide h2{font-size:1.12rem}
+.help-guide h3{font-size:.98rem;margin-top:18px}
+.help-guide blockquote{color:#c5d4c8}
+.help-guide pre,.help-guide pre code{white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:570px){.intro-right{flex-wrap:wrap;justify-content:flex-start;gap:8px 14px}}
 .metric-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;width:100%}.metric-heading .metric-label{width:auto;min-height:0}.metric-heading .kappa-base{margin-left:auto}
 
 @media(max-width:570px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{min-width:0}.primary .metric-value{font-size:clamp(.82rem,3.8vw,1.32rem)}.metric-label{min-height:2.5em}}
