@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { PROBLEMS, REGISTRY_PROBLEMS, validateProblem } from '../lib/problems.mjs';
+import { PROBLEMS, REGISTRY_PROBLEMS, INVITED_PROBLEMS, validateProblem } from '../lib/problems.mjs';
 import { catalogEntry, readRegistry } from '../lib/catalog.mjs';
 import { collectResearch } from '../lib/github.mjs';
 import snapshot from '../problems/130.registry.json' with { type: 'json' };
@@ -39,6 +39,24 @@ test('the Fourier registry headline is the named saving, not the tensor witness'
   assert.equal(bundled.current.id, snapshot.current);
   assert.ok(bundled.current.value > 1e-13 && bundled.current.value < 1);
   assert.equal(bundled.results.length, snapshot.results.length);
+});
+
+test('families 131, 137 and 138 invite a smaller exponent and stay out of the Fourier collector', () => {
+  assert.deepEqual(INVITED_PROBLEMS.map(problem => problem.id), ['131', '137', '138']);
+  for (const problem of INVITED_PROBLEMS) {
+    assert.equal(validateProblem(problem), '');
+    assert.equal(problem.collector, 'invitation');
+    assert.equal(problem.direction, 'lower');
+    assert.equal(problem.watch, undefined);
+  }
+  const subset = INVITED_PROBLEMS.find(problem => problem.id === '138');
+  assert.equal(subset.try.savingField, 'time_exponent');
+  assert.equal(subset.companions[0].savingField, 'space_exponent');
+  assert.match(validateProblem({ ...subset, companions: [{ ...subset.companions[0], savingField: 'time_exponent' }] }), /different saving field/);
+  assert.match(validateProblem({ ...INVITED_PROBLEMS[0], watch: { repo: 'someone/attempt', selection: 'results/registry.json' } }), /no watched repository/);
+  assert.match(validateProblem({ ...fourier, parser: 'exponent' }), /power-saving/);
+  assert.deepEqual(REGISTRY_PROBLEMS.map(problem => problem.id), ['130']);
+  assert.equal(PROBLEMS.find(problem => problem.id === '137').try.example, '2/5');
 });
 
 test('a Fourier registry is collected without disturbing the integer-multiplication record', async () => {

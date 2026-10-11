@@ -21,7 +21,7 @@ You can also keep the token in `.env` and start Vite using `node --env-file=.env
 
 ## Watched problems
 
-Family 109 is this dashboard: public pull requests and `certificates/selected-result.json` on `CrocSwap/integer-mult-bounds`. Family 130, the exact Fourier power saving, is read from the result registry in `shea256/fourier-transform-below-nlogn`. The switch on the page moves between them. [problems/README.md](problems/README.md) describes the registry shape and which other OpenAI families are not the same kind of saving.
+Family 109 is this dashboard: public pull requests and `certificates/selected-result.json` on `CrocSwap/integer-mult-bounds`. Family 130, the exact Fourier power saving, is read from the result registry in `shea256/fourier-transform-below-nlogn`. Families 131, 137, and 138 are marked Try: each publishes an exponent, lower is better, and no public repository is watched yet. The switch moves between them. [problems/README.md](problems/README.md) describes the registry shape and the invited attempts.
 
 ## Explore
 
