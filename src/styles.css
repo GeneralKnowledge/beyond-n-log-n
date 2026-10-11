@@ -20,6 +20,7 @@
 .help-guide h2{font-size:1.12rem}
 .help-guide h3{font-size:.98rem;margin-top:18px}
 .help-guide blockquote{color:#c5d4c8}
+.help-guide pre,.help-guide pre code{white-space:pre-wrap;overflow-wrap:anywhere}
 @media(max-width:570px){.intro-right{flex-wrap:wrap;justify-content:flex-start;gap:8px 14px}}
 .metric-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;width:100%}.metric-heading .metric-label{width:auto;min-height:0}.metric-heading .kappa-base{margin-left:auto}
 

@@ -4,7 +4,7 @@ An interactive research dashboard for [CrocSwap/integer-mult-bounds](https://git
 
 ## Help further the maths
 
-[How anyone can help](docs/how-to-help.md) is a short guide for checking a claim, explaining a piece, recording a search, or submitting an exact improvement to the integer-multiplication exponent. The same guide opens from **How to help** on the dashboard. Research pull requests go to [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds).
+[How anyone can help](docs/how-to-help.md) explains how to use a model to propose one exact improvement to the integer-multiplication exponent, and how to check the fraction. The same guide opens from **How to help** on the dashboard. The steps for submitting a checked result to [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds) are included.
 
 ## Run locally
 
