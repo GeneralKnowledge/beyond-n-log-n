@@ -2,6 +2,10 @@
 
 An interactive research dashboard for [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds). Built with React, TypeScript and Vite, with a Netlify Function for live GitHub updates. Published at [beyond-n-log-n.netlify.app](https://beyond-n-log-n.netlify.app).
 
+## Help further the maths
+
+[How anyone can help](docs/how-to-help.md) is a short guide for checking a claim, explaining a piece, recording a search, or submitting an exact improvement to the integer-multiplication exponent. The same guide opens from **How to help** on the dashboard. Research pull requests go to [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds).
+
 ## Run locally
 
 Requires Node.js 22 or newer.
