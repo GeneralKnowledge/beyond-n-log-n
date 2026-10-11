@@ -23,6 +23,10 @@ GITHUB_TOKEN=your_read_only_token npm run dev
 
 You can also keep the token in `.env` and start Vite using `node --env-file=.env node_modules/vite/bin/vite.js --host 127.0.0.1`. Never commit `.env`. The token must never use a `VITE_` prefix, which would expose it to browsers.
 
+## Watched problems
+
+Family 109 is this dashboard: public pull requests and `certificates/selected-result.json` on `CrocSwap/integer-mult-bounds`. Family 130, the exact Fourier power saving, is read from the result registry in `shea256/fourier-transform-below-nlogn`. Families 131, 137, and 138 are marked Try: each publishes an exponent, lower is better, and no public repository is watched yet. The switch moves between them. [problems/README.md](problems/README.md) describes the registry shape and the invited attempts.
+
 ## Explore
 
 The **10 / 2** toggles on the maintainer-reviewed κ card and timeline stay in sync. They switch κ notation and the timeline's logarithmic units between powers of ten and two. The selected time window and zoom are preserved; on a linear scale only the notation changes.

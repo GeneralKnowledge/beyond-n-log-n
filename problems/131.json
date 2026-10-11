@@ -1,0 +1,28 @@
+{
+  "id": "131",
+  "family": 131,
+  "title": "Rapid mixing of graph switches",
+  "short": "graph switches",
+  "formula": "mixing time ≤ 2n^8",
+  "symbol": "8",
+  "mark": "8",
+  "parser": "exponent",
+  "direction": "lower",
+  "status": "invited",
+  "collector": "invitation",
+  "coordinate": "The exponent in the mixing time. The published bound is 2n^8 for every graphical degree sequence.",
+  "note": "The same manuscript gives an exactly uniform sampler with expected polynomial bit running time. That sampler is a separate claim from the mixing exponent.",
+  "try": {
+    "savingField": "mixing_exponent",
+    "example": "8",
+    "hint": "A later record is a smaller proven exponent. Keep the leading factor 2 out of this field. The published degree is 8, and the Fourier reader only accepts a saving strictly between 0 and 1, so this page can name a repository without plotting that integer."
+  },
+  "source": {
+    "repo": "openai/math",
+    "path": "preprints/Polynomial-Mixing-of-the-Switch-Chain-for-Every-Graphical-Degree-Sequence-September-25-2026",
+    "title": "Polynomial mixing of the switch chain for every graphical degree sequence",
+    "date": "2026-09-25",
+    "saving": "2n^8"
+  },
+  "lean": "lean/docs/131.md"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "130",
+  "family": 130,
+  "title": "Exact Fourier transforms below n log n",
+  "formula": "T(n) = O(n (log n)^{1−δ})",
+  "symbol": "δ",
+  "parser": "power-saving",
+  "direction": "higher",
+  "status": "watching",
+  "collector": "result-registry",
+  "watch": {
+    "repo": "shea256/fourier-transform-below-nlogn",
+    "selection": "results/registry.json",
+    "savingField": "fourier_saving"
+  },
+  "source": {
+    "repo": "openai/math",
+    "path": "preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026",
+    "title": "An explicit power saving for the exact discrete Fourier transform",
+    "date": "2026-09-25",
+    "saving": "1e-13"
+  }
+}

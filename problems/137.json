@@ -1,0 +1,28 @@
+{
+  "id": "137",
+  "family": 137,
+  "title": "One-tape time in two-fifths-power space",
+  "short": "one-tape space",
+  "formula": "O(T^{2/5} polylog(T)) space",
+  "symbol": "2/5",
+  "mark": "2/5",
+  "parser": "exponent",
+  "direction": "lower",
+  "status": "invited",
+  "collector": "invitation",
+  "coordinate": "The space exponent for one writable tape. The published bound is 2/5, below the older square-root exponent.",
+  "note": "The simulator determines the finite-control and halting outcome by time T. Its own running time is unrestricted. Finitely many read-only input heads are allowed.",
+  "try": {
+    "savingField": "space_exponent",
+    "example": "2/5",
+    "hint": "A later record is a smaller proven space exponent than 2/5. Use an exact expression strictly between 0 and 1. Lower stays the direction, so a smaller value is the later record."
+  },
+  "source": {
+    "repo": "openai/math",
+    "path": "preprints/Simulating-One-Tape-Time-in-Two-Fifths-Power-Space-September-25-2026",
+    "title": "Simulating One-Tape Time in Two-Fifths-Power Space",
+    "date": "2026-09-25",
+    "saving": "2/5"
+  },
+  "lean": "lean/docs/137.md"
+}

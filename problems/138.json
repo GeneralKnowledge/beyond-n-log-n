@@ -1,0 +1,38 @@
+{
+  "id": "138",
+  "family": 138,
+  "title": "Subset Sum in sub-half-exponential time",
+  "short": "subset sum",
+  "formula": "O(2^{0.49n}) word-RAM time",
+  "symbol": "0.49",
+  "mark": ".49",
+  "parser": "exponent",
+  "direction": "lower",
+  "status": "invited",
+  "collector": "invitation",
+  "coordinate": "The worst-case time exponent. The published bound is 0.49, on polynomial-bit inputs, with success probability at least 2/3.",
+  "note": "The time bound holds on every execution. Repeats of positive integers are allowed. A smaller time exponent is the record this page is asking for.",
+  "try": {
+    "savingField": "time_exponent",
+    "example": "0.49",
+    "hint": "A later record is a smaller time exponent than 0.49. Use an exact expression strictly between 0 and 1. The low-space algorithm uses space_exponent and is not a faster time bound."
+  },
+  "companions": [
+    {
+      "title": "A low-space algorithm for worst-case Subset Sum",
+      "path": "preprints/A-Low-Space-Algorithm-for-Worst-Case-Subset-Sum-September-26-2026",
+      "date": "2026-09-26",
+      "formula": "O(2^{n/5}) writable words",
+      "saving": "1/5",
+      "savingField": "space_exponent",
+      "note": "A space bound for a different algorithm. It is not a time exponent, and it does not replace 0.49."
+    }
+  ],
+  "source": {
+    "repo": "openai/math",
+    "path": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026",
+    "title": "Subset Sum in time O(2^{0.49n})",
+    "date": "2026-10-04",
+    "saving": "0.49"
+  }
+}
